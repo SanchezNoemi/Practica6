@@ -45,11 +45,11 @@ public class Player : MonoBehaviour
             transform.RotateAround(transform.position, transform.right, -xFiltered * sensivity * Time.deltaTime);
             float yFiltered = FilerGyroValue(y);
             transform.RotateAround(transform.position, transform.up, -yFiltered * sensivity * Time.deltaTime);
-            //Walk(x);
-            //Rotar(y);
+            Walk(x);
+            Rotar(y);
         }
-        Walk(transform.localEulerAngles.x);
-        Rotar(transform.localEulerAngles.y);/**/
+        //Walk(transform.localEulerAngles.x);
+        //Rotar(transform.localEulerAngles.y);/**/
         Shoot();
     }
 
